@@ -1,22 +1,20 @@
+#Use an official Python runtime as a parent image
+FROM python:2.7-slim
 
-# our base image
-FROM alpine:3.5
+# Set the working directory to /app
+WORKDIR /app
 
-# Install python and pip
-RUN apk add --update py2-pip
+# Copy the current directory contents into the container at /app
+ADD . /app
 
-# install Python modules needed by the Python app
-COPY requirements.txt /usr/src/app/
-RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
+# Install any needed packages specified in requirements.txt
+RUN pip install -r requirements.txt
 
-# copy files required for the app to run
-COPY app.py /usr/src/app/
-COPY templates/index.html /usr/src/app/templates/
+# Make port 80 available to the world outside this container
+EXPOSE 80
 
-# tell the port number the container should expose
-EXPOSE 5000
+# Define environment variable
+ENV NAME World
 
-# run the application
-CMD ["python", "/usr/src/app/app.py"]
-
-
+# Run app.py when the container launches
+CMD ["python", "app.py"]
