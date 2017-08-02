@@ -17,4 +17,4 @@ This image is published on AWS [ECR](https://943854076708.dkr.ecr.us-west-2.amaz
 
 #### Reference
 
-The instructions for this deployment comes from [instructions on aws](http://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_GetStarted.html)
+The instructions for this deployment comes from [instructions on aws](http://docs.aws.amazon.com/AmazonECR/latest/userguide/ECR_GetStarted.html).
