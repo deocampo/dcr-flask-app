@@ -1,6 +1,6 @@
 ## Description
 
-Basic Docker Image of a Python Application
+Basic Docker Image of a Python Application using the base image : python:2.7-slim.
 
 ## Deployment:
 
