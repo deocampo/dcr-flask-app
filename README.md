@@ -13,7 +13,7 @@ The instructions for this deployment comes from [instructions on docker](https:/
 
 
 ### AWS
-This image is published on AWS [ECR](943854076708.dkr.ecr.us-west-2.amazonaws.com/dcr-flask-app)
+This image is published on AWS [ECR](https://943854076708.dkr.ecr.us-west-2.amazonaws.com/dcr-flask-app)
 
 #### Reference
 
